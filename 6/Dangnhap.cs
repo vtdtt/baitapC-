@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace _6
 {
-    public partial class Form2 : Form
+    public partial class Dangnhap : Form
     {
 
-        public Form2(Color maunen)
+        public Dangnhap(Color maunen)
         {
             InitializeComponent();
             this.BackColor = maunen;
@@ -54,6 +54,22 @@ namespace _6
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Dangky f = new Dangky(this.BackColor);
+            f.Show();
+            f.Location = this.Location;
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Phanquyen f = new Phanquyen(this.BackColor);
+            f.Show();
+            f.Location = this.Location;
+            this.Hide();
         }
     }
 }
