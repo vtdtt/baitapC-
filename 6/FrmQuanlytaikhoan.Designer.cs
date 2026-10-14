@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvTaikhoan = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tendangnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaytao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaycapnhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.txtTendangnhap = new System.Windows.Forms.TextBox();
             this.txtIDtaikhoan = new System.Windows.Forms.TextBox();
@@ -58,12 +64,6 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tendangnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaytao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaycapnhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaikhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -79,14 +79,14 @@
             // 
             this.dgvTaikhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTaikhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTaikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTaikhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -95,14 +95,14 @@
             this.Trangthai,
             this.Ngaytao,
             this.Ngaycapnhat});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTaikhoan.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTaikhoan.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTaikhoan.EnableHeadersVisualStyles = false;
             this.dgvTaikhoan.Location = new System.Drawing.Point(27, 29);
             this.dgvTaikhoan.Name = "dgvTaikhoan";
@@ -110,6 +110,51 @@
             this.dgvTaikhoan.Size = new System.Drawing.Size(1013, 177);
             this.dgvTaikhoan.TabIndex = 5;
             this.dgvTaikhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTaikhoan_CellClick);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "id";
+            this.ID.FillWeight = 40F;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // Tendangnhap
+            // 
+            this.Tendangnhap.DataPropertyName = "username";
+            this.Tendangnhap.HeaderText = "Tên đăng nhập";
+            this.Tendangnhap.MinimumWidth = 6;
+            this.Tendangnhap.Name = "Tendangnhap";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "email";
+            this.Email.FillWeight = 120F;
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            // 
+            // Trangthai
+            // 
+            this.Trangthai.DataPropertyName = "is_active";
+            this.Trangthai.FillWeight = 40F;
+            this.Trangthai.HeaderText = "Trạng thái";
+            this.Trangthai.MinimumWidth = 6;
+            this.Trangthai.Name = "Trangthai";
+            // 
+            // Ngaytao
+            // 
+            this.Ngaytao.DataPropertyName = "created_at";
+            this.Ngaytao.HeaderText = "Ngày tạo";
+            this.Ngaytao.MinimumWidth = 6;
+            this.Ngaytao.Name = "Ngaytao";
+            // 
+            // Ngaycapnhat
+            // 
+            this.Ngaycapnhat.DataPropertyName = "updated_at";
+            this.Ngaycapnhat.HeaderText = "Ngày cập nhật";
+            this.Ngaycapnhat.MinimumWidth = 6;
+            this.Ngaycapnhat.Name = "Ngaycapnhat";
             // 
             // iconPictureBox3
             // 
@@ -464,51 +509,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1128, 86);
             this.panel1.TabIndex = 10;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "id";
-            this.ID.FillWeight = 40F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // Tendangnhap
-            // 
-            this.Tendangnhap.DataPropertyName = "username";
-            this.Tendangnhap.HeaderText = "Tên đăng nhập";
-            this.Tendangnhap.MinimumWidth = 6;
-            this.Tendangnhap.Name = "Tendangnhap";
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "email";
-            this.Email.FillWeight = 120F;
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            // 
-            // Trangthai
-            // 
-            this.Trangthai.DataPropertyName = "is_active";
-            this.Trangthai.FillWeight = 40F;
-            this.Trangthai.HeaderText = "Trạng thái";
-            this.Trangthai.MinimumWidth = 6;
-            this.Trangthai.Name = "Trangthai";
-            // 
-            // Ngaytao
-            // 
-            this.Ngaytao.DataPropertyName = "created_at";
-            this.Ngaytao.HeaderText = "Ngày tạo";
-            this.Ngaytao.MinimumWidth = 6;
-            this.Ngaytao.Name = "Ngaytao";
-            // 
-            // Ngaycapnhat
-            // 
-            this.Ngaycapnhat.DataPropertyName = "updated_at";
-            this.Ngaycapnhat.HeaderText = "Ngày cập nhật";
-            this.Ngaycapnhat.MinimumWidth = 6;
-            this.Ngaycapnhat.Name = "Ngaycapnhat";
             // 
             // FrmQuanlytaikhoan
             // 
