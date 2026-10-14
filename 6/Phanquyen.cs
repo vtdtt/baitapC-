@@ -11,12 +11,13 @@ using System.Windows.Forms;
 
 namespace _6
 {
-    public partial class Form1 : Form
+    public partial class Phanquyen : Form
     {
-        public Form1()
+        public Phanquyen(Color maunen)
         {
             InitializeComponent();
-            ///hehhe
+            this.BackColor = maunen;
+
         }
 
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
@@ -76,16 +77,18 @@ namespace _6
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2(this.BackColor);
+            loginhocsinh f = new loginhocsinh(this.BackColor);
             f.Show();
+            f.Location = this.Location;
             this.Hide();
             
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2(this.BackColor);
+            loginadmin f = new loginadmin(this.BackColor);
             f.Show();
+            f.Location = this.Location;
             this.Hide();
         }
 
@@ -100,12 +103,12 @@ namespace _6
             if (darkmode)
             {
                 this.BackColor = ColorTranslator.FromHtml("#232D45");
-                guna2CustomGradientPanel1.BackColor = ColorTranslator.FromHtml("#28334E");
+                
             }
             else
             {
                 this.BackColor = ColorTranslator.FromHtml("#F1F5F9");
-                guna2CustomGradientPanel1.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+                
             }
         }
     }
