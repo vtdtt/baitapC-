@@ -16,6 +16,8 @@ namespace _6
         public Phanquyen(Color maunen)
         {
             InitializeComponent();
+            this.BackColor = maunen;
+
         }
 
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
