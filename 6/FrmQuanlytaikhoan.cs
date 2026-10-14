@@ -309,6 +309,16 @@ namespace _6
             }
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+       
+            Formgiaodienqly f = new Formgiaodienqly();
+            f.Show();
+            f.Location = this.Location;
+            f.Size = this.Size;
+            this.Hide();
+        }
+   
     }
 }
 

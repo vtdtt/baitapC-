@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -66,6 +66,7 @@
             this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDanhsachtacgia = new System.Windows.Forms.GroupBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.btnBack = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.grpTimkiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -452,14 +453,14 @@
             // 
             this.dgvDethi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDethi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDethi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDethi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvDethi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDethi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
@@ -467,14 +468,14 @@
             this.Tende,
             this.Tenmon,
             this.ThoiGian});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDethi.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDethi.DefaultCellStyle = dataGridViewCellStyle16;
             this.dgvDethi.EnableHeadersVisualStyles = false;
             this.dgvDethi.Location = new System.Drawing.Point(27, 29);
             this.dgvDethi.Name = "dgvDethi";
@@ -535,7 +536,7 @@
             this.grpDanhsachtacgia.ForeColor = System.Drawing.Color.RoyalBlue;
             this.grpDanhsachtacgia.Location = new System.Drawing.Point(12, 493);
             this.grpDanhsachtacgia.Name = "grpDanhsachtacgia";
-            this.grpDanhsachtacgia.Size = new System.Drawing.Size(960, 235);
+            this.grpDanhsachtacgia.Size = new System.Drawing.Size(960, 223);
             this.grpDanhsachtacgia.TabIndex = 9;
             this.grpDanhsachtacgia.TabStop = false;
             this.grpDanhsachtacgia.Text = "   DANH SÁCH ĐỀ THI";
@@ -554,14 +555,36 @@
             this.iconPictureBox3.TabIndex = 4;
             this.iconPictureBox3.TabStop = false;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Azure;
+            this.btnBack.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnBack.IconColor = System.Drawing.Color.White;
+            this.btnBack.IconFont = FontAwesome.Sharp.IconFont.Brands;
+            this.btnBack.IconSize = 38;
+            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBack.Location = new System.Drawing.Point(821, 722);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(151, 41);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Back";
+            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FrmQuanlydethi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1005, 718);
+            this.ClientSize = new System.Drawing.Size(1005, 775);
             this.Controls.Add(this.grpTimkiem);
             this.Controls.Add(this.grpThongtin);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.grpDanhsachtacgia);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.panel1);
@@ -623,5 +646,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tende;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tenmon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
+        private FontAwesome.Sharp.IconButton btnBack;
     }
 }
