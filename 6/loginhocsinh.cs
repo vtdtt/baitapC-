@@ -103,6 +103,10 @@ namespace _6
                     if (dungmatkhau)
                     {
                         MessageBox.Show("Đăng nhập thành công");
+                        trangthi f = new trangthi();
+                        f.Show();
+                        f.Location = this.Location;
+                        this.Hide();
                     }
                     else
                     {
