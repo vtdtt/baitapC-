@@ -98,5 +98,14 @@ namespace _6
                 }
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Formgiaodien f = new Formgiaodien();
+            f.Show();
+            f.Location = this.Location;
+            f.Size = this.Size;
+            this.Hide();
+        }
     }
 }
