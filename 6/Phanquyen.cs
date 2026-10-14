@@ -17,6 +17,7 @@ namespace _6
         {
             InitializeComponent();
             this.BackColor = maunen;
+            //hehe
         }
 
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
@@ -76,7 +77,7 @@ namespace _6
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Dangnhap f = new Dangnhap(this.BackColor);
+            loginhocsinh f = new loginhocsinh(this.BackColor);
             f.Show();
             f.Location = this.Location;
             this.Hide();
@@ -85,7 +86,7 @@ namespace _6
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Dangnhap f = new Dangnhap(this.BackColor);
+            loginadmin f = new loginadmin(this.BackColor);
             f.Show();
             f.Location = this.Location;
             this.Hide();

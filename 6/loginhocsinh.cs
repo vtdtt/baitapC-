@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -12,10 +13,10 @@ using System.Windows.Forms;
 
 namespace _6
 {
-    public partial class Dangnhap : Form
+    public partial class loginhocsinh : Form
     {
-
-        public Dangnhap(Color maunen)
+        string connectionString = @"Data Source=localhost;Initial Catalog=login_system;Integrated Security=True";
+        public loginhocsinh(Color maunen)
         {
             InitializeComponent();
             this.BackColor = maunen;
@@ -23,7 +24,7 @@ namespace _6
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
         private void BogocPanel(Panel pnl, int radius)
         {
@@ -48,7 +49,7 @@ namespace _6
         private void Form2_Load(object sender, EventArgs e)
         {
             BogocPanel(panel1, 9);
-           
+
         }
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
@@ -71,5 +72,45 @@ namespace _6
             f.Location = this.Location;
             this.Hide();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string tk = guna2TextBox1.Text.Trim();
+            string mk = guna2TextBox2.Text;
+            if (tk == "" || mk == "")
+            {
+                MessageBox.Show("Nhập đầy đủ thông tin");
+                return;
+            }
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = @"SELECT password_hash
+                    FROM users
+                    WHERE username = @username
+                    AND is_active = 1;";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", tk);
+                    object result = cmd.ExecuteScalar();
+                    if (result == null)
+                    {
+                        MessageBox.Show("Tài khoản này không tồn tại");
+                        return;
+                    }
+                    string password_hash = result.ToString().Trim();
+                    bool dungmatkhau = BCrypt.Net.BCrypt.Verify(mk, password_hash);
+                    if (dungmatkhau)
+                    {
+                        MessageBox.Show("Đăng nhập thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai mật khẩu");
+                    }
+                }
+            }
+        }
     }
 }
+
