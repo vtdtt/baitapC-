@@ -16,6 +16,7 @@ namespace _6
         public Form1()
         {
             InitializeComponent();
+            ///hehhe
         }
 
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
