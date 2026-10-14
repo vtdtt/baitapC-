@@ -1,6 +1,24 @@
-﻿create database htthi;
+create database htthi;
 go
-use htthi;
+USE htthi;
+GO
+
+CREATE TABLE dethi
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    MaDe VARCHAR(20) NOT NULL UNIQUE,
+    TenDe NVARCHAR(100) NOT NULL,
+    MonId INT NOT NULL,
+    ThoiGian INT NOT NULL,
+
+    CONSTRAINT FK_dethi_monthi
+        FOREIGN KEY (MonId) REFERENCES monthi(Id),
+
+    CONSTRAINT CK_dethi_ThoiGian
+        CHECK (ThoiGian > 0)
+);
+GO
+
 create table monthi
 (
 id int IDENTITY(1,1) primary key,
@@ -60,6 +78,15 @@ insert into cauhoi (MonId, NoiDung, DapAnA, DapAnB, DapAnC, DapAnD, DapAnDung) v
     N'4',
     'B'
 );
+
+
+INSERT INTO dethi (MaDe, TenDe, MonId, ThoiGian)
+VALUES
+('DT01', N'Đề thi Triết số 1', 1, 60),
+('DT02', N'Đề thi Toán giải tích 1 - Số 1', 2, 90),
+('DT03', N'Đề thi Toán giải tích 2 - Số 1', 3, 90);
+GO
+
 insert into cauhoi (MonId, NoiDung, DapAnA, DapAnB, DapAnC, DapAnD, DapAnDung) values
 (
     3,
@@ -80,3 +107,5 @@ insert into cauhoi (MonId, NoiDung, DapAnA, DapAnB, DapAnC, DapAnD, DapAnDung) v
     'B'
 );
 select * from cauhoi 
+select *from monthi
+select *from dethi
