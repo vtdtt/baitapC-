@@ -67,6 +67,24 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formgiaodien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formgiaodien.Designer.cs">
+      <DependentUpon>Formgiaodien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlichsuthihs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlichsuthihs.Designer.cs">
+      <DependentUpon>Formlichsuthihs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formthongtintaikhoanhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formthongtintaikhoanhs.Designer.cs">
+      <DependentUpon>Formthongtintaikhoanhs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +92,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formgiaodien.resx">
+      <DependentUpon>Formgiaodien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlichsuthihs.resx">
+      <DependentUpon>Formlichsuthihs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formthongtintaikhoanhs.resx">
+      <DependentUpon>Formthongtintaikhoanhs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
