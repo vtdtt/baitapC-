@@ -58,5 +58,22 @@ namespace _6
             BoTron(panel3, 10);
             BoTron(panel4, 10);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Phanquyen f = new Phanquyen(this.BackColor);
+            f.Show();
+            f.Location = this.Location;
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dethi f = new dethi();
+            f.Show();
+            f.Location = this.Location;
+            f.Size = this.Size;
+            this.Hide();
+        }
     }
 }

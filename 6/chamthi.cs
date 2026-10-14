@@ -10,7 +10,7 @@ namespace _6
 {
     public class cauhoi
     {
-      
+
         public string Id { get; set; }
         public string MonId { get; set; }
         public string NoiDung { get; set; }
@@ -19,6 +19,7 @@ namespace _6
         public string DapAnC { get; set; }
         public string DapAnD { get; set; }
         public string DapAnDung { get; set; }
+    }
     
     public class chamthi
     {
@@ -100,5 +101,5 @@ namespace _6
             }
         }
     }
-}
+
 
