@@ -79,6 +79,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="chamthi.cs" />
+    <Compile Include="dethi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dethi.Designer.cs">
+      <DependentUpon>dethi.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginadmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     <Compile Include="trangthi.Designer.cs">
       <DependentUpon>trangthi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="dethi.resx">
+      <DependentUpon>dethi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginadmin.resx">
       <DependentUpon>loginadmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +186,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="trangthi.resx">
+      <DependentUpon>trangthi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

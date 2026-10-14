@@ -103,7 +103,7 @@ namespace _6
                     if (dungmatkhau)
                     {
                         MessageBox.Show("Đăng nhập thành công");
-                        trangthi f = new trangthi();
+                        Formgiaodien f = new Formgiaodien();
                         f.Show();
                         f.Location = this.Location;
                         this.Hide();

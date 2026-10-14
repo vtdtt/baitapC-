@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formlichsuthihs));
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_menuchinh = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -43,73 +43,74 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl_lichsuthi = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.pnl_diemcaonhat = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.pnl_danglam = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pnl_dahoanthanh = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.paneltongsobaithi = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_danhsach = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button7 = new System.Windows.Forms.Button();
+            this.bttn_timkiem = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txt_nhapthongtin = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.pnl_menuchinh.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.pnl_lichsuthi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.pnl_diemcaonhat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel9.SuspendLayout();
+            this.pnl_danglam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel8.SuspendLayout();
+            this.pnl_dahoanthanh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.paneltongsobaithi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_danhsach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnl_menuchinh
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Location = new System.Drawing.Point(1, 81);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(362, 702);
-            this.panel2.TabIndex = 4;
+            this.pnl_menuchinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnl_menuchinh.Controls.Add(this.panel3);
+            this.pnl_menuchinh.Controls.Add(this.panel5);
+            this.pnl_menuchinh.Controls.Add(this.button6);
+            this.pnl_menuchinh.Controls.Add(this.button5);
+            this.pnl_menuchinh.Controls.Add(this.button4);
+            this.pnl_menuchinh.Controls.Add(this.button3);
+            this.pnl_menuchinh.Controls.Add(this.button2);
+            this.pnl_menuchinh.Controls.Add(this.button1);
+            this.pnl_menuchinh.Controls.Add(this.label5);
+            this.pnl_menuchinh.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.pnl_menuchinh.Location = new System.Drawing.Point(1, 81);
+            this.pnl_menuchinh.Name = "pnl_menuchinh";
+            this.pnl_menuchinh.Size = new System.Drawing.Size(362, 702);
+            this.pnl_menuchinh.TabIndex = 4;
             // 
             // panel3
             // 
@@ -121,7 +122,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(3, 507);
+            this.panel5.Location = new System.Drawing.Point(7, 507);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(342, 1);
             this.panel5.TabIndex = 7;
@@ -282,17 +283,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // pnl_lichsuthi
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(369, 45);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(843, 100);
-            this.panel4.TabIndex = 5;
+            this.pnl_lichsuthi.BackColor = System.Drawing.Color.PowderBlue;
+            this.pnl_lichsuthi.Controls.Add(this.pictureBox3);
+            this.pnl_lichsuthi.Controls.Add(this.label4);
+            this.pnl_lichsuthi.Controls.Add(this.label3);
+            this.pnl_lichsuthi.Controls.Add(this.pictureBox2);
+            this.pnl_lichsuthi.Location = new System.Drawing.Point(369, 45);
+            this.pnl_lichsuthi.Name = "pnl_lichsuthi";
+            this.pnl_lichsuthi.Size = new System.Drawing.Size(843, 100);
+            this.pnl_lichsuthi.TabIndex = 5;
             // 
             // pictureBox3
             // 
@@ -336,32 +337,32 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.panel10);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel6.Controls.Add(this.pnl_diemcaonhat);
+            this.panel6.Controls.Add(this.pnl_danglam);
+            this.panel6.Controls.Add(this.pnl_dahoanthanh);
+            this.panel6.Controls.Add(this.paneltongsobaithi);
+            this.panel6.Controls.Add(this.dgv_danhsach);
             this.panel6.Controls.Add(this.dateTimePicker1);
-            this.panel6.Controls.Add(this.button7);
+            this.panel6.Controls.Add(this.bttn_timkiem);
             this.panel6.Controls.Add(this.comboBox1);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.txt_nhapthongtin);
             this.panel6.Location = new System.Drawing.Point(369, 158);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(843, 625);
             this.panel6.TabIndex = 6;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // panel10
+            // pnl_diemcaonhat
             // 
-            this.panel10.BackColor = System.Drawing.Color.Thistle;
-            this.panel10.Controls.Add(this.label13);
-            this.panel10.Controls.Add(this.label9);
-            this.panel10.Controls.Add(this.pictureBox9);
-            this.panel10.Location = new System.Drawing.Point(439, 177);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(341, 100);
-            this.panel10.TabIndex = 0;
+            this.pnl_diemcaonhat.BackColor = System.Drawing.Color.Thistle;
+            this.pnl_diemcaonhat.Controls.Add(this.label13);
+            this.pnl_diemcaonhat.Controls.Add(this.label9);
+            this.pnl_diemcaonhat.Controls.Add(this.pictureBox9);
+            this.pnl_diemcaonhat.Location = new System.Drawing.Point(439, 177);
+            this.pnl_diemcaonhat.Name = "pnl_diemcaonhat";
+            this.pnl_diemcaonhat.Size = new System.Drawing.Size(341, 100);
+            this.pnl_diemcaonhat.TabIndex = 0;
             // 
             // label13
             // 
@@ -395,15 +396,26 @@
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
             // 
-            // panel9
+            // pnl_danglam
             // 
-            this.panel9.BackColor = System.Drawing.Color.Beige;
-            this.panel9.Controls.Add(this.label6);
-            this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Location = new System.Drawing.Point(43, 174);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(341, 100);
-            this.panel9.TabIndex = 0;
+            this.pnl_danglam.BackColor = System.Drawing.Color.Beige;
+            this.pnl_danglam.Controls.Add(this.label11);
+            this.pnl_danglam.Controls.Add(this.label6);
+            this.pnl_danglam.Controls.Add(this.pictureBox8);
+            this.pnl_danglam.Location = new System.Drawing.Point(43, 174);
+            this.pnl_danglam.Name = "pnl_danglam";
+            this.pnl_danglam.Size = new System.Drawing.Size(341, 100);
+            this.pnl_danglam.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(236, 21);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 57);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "10";
             // 
             // label6
             // 
@@ -428,16 +440,16 @@
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
-            // panel8
+            // pnl_dahoanthanh
             // 
-            this.panel8.BackColor = System.Drawing.Color.Honeydew;
-            this.panel8.Controls.Add(this.label10);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Location = new System.Drawing.Point(439, 71);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(341, 100);
-            this.panel8.TabIndex = 0;
+            this.pnl_dahoanthanh.BackColor = System.Drawing.Color.Honeydew;
+            this.pnl_dahoanthanh.Controls.Add(this.label10);
+            this.pnl_dahoanthanh.Controls.Add(this.label7);
+            this.pnl_dahoanthanh.Controls.Add(this.pictureBox7);
+            this.pnl_dahoanthanh.Location = new System.Drawing.Point(439, 71);
+            this.pnl_dahoanthanh.Name = "pnl_dahoanthanh";
+            this.pnl_dahoanthanh.Size = new System.Drawing.Size(341, 100);
+            this.pnl_dahoanthanh.TabIndex = 0;
             // 
             // label10
             // 
@@ -472,16 +484,16 @@
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
             // 
-            // panel7
+            // paneltongsobaithi
             // 
-            this.panel7.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Location = new System.Drawing.Point(43, 68);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(341, 100);
-            this.panel7.TabIndex = 0;
+            this.paneltongsobaithi.BackColor = System.Drawing.Color.AliceBlue;
+            this.paneltongsobaithi.Controls.Add(this.label12);
+            this.paneltongsobaithi.Controls.Add(this.label8);
+            this.paneltongsobaithi.Controls.Add(this.pictureBox6);
+            this.paneltongsobaithi.Location = new System.Drawing.Point(43, 68);
+            this.paneltongsobaithi.Name = "paneltongsobaithi";
+            this.paneltongsobaithi.Size = new System.Drawing.Size(341, 100);
+            this.paneltongsobaithi.TabIndex = 0;
             // 
             // label12
             // 
@@ -498,7 +510,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(13, 72);
+            this.label8.Location = new System.Drawing.Point(13, 61);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(133, 23);
             this.label8.TabIndex = 6;
@@ -514,18 +526,18 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // dataGridView1
+            // dgv_danhsach
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 293);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(762, 329);
-            this.dataGridView1.TabIndex = 6;
+            this.dgv_danhsach.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgv_danhsach.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_danhsach.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_danhsach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_danhsach.Location = new System.Drawing.Point(32, 293);
+            this.dgv_danhsach.Name = "dgv_danhsach";
+            this.dgv_danhsach.RowHeadersWidth = 51;
+            this.dgv_danhsach.RowTemplate.Height = 24;
+            this.dgv_danhsach.Size = new System.Drawing.Size(762, 329);
+            this.dgv_danhsach.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
@@ -534,18 +546,18 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(160, 22);
             this.dateTimePicker1.TabIndex = 3;
             // 
-            // button7
+            // bttn_timkiem
             // 
-            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(695, 14);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(133, 52);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Tìm Kiếm";
-            this.button7.UseVisualStyleBackColor = false;
+            this.bttn_timkiem.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bttn_timkiem.ForeColor = System.Drawing.Color.White;
+            this.bttn_timkiem.Image = ((System.Drawing.Image)(resources.GetObject("bttn_timkiem.Image")));
+            this.bttn_timkiem.Location = new System.Drawing.Point(695, 14);
+            this.bttn_timkiem.Name = "bttn_timkiem";
+            this.bttn_timkiem.Size = new System.Drawing.Size(133, 52);
+            this.bttn_timkiem.TabIndex = 2;
+            this.bttn_timkiem.Text = "Tìm Kiếm";
+            this.bttn_timkiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bttn_timkiem.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -555,41 +567,43 @@
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
             this.comboBox1.TabIndex = 1;
             // 
-            // textBox1
+            // txt_nhapthongtin
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 22);
-            this.textBox1.TabIndex = 0;
+            this.txt_nhapthongtin.Location = new System.Drawing.Point(12, 30);
+            this.txt_nhapthongtin.Name = "txt_nhapthongtin";
+            this.txt_nhapthongtin.Size = new System.Drawing.Size(300, 22);
+            this.txt_nhapthongtin.TabIndex = 0;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(766, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(28, 31);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(812, 3);
+            this.pictureBox5.Location = new System.Drawing.Point(800, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(28, 31);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             // 
-            // guna2CustomGradientPanel1
+            // panel11
             // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox4);
-            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox5);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(366, 1);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(843, 37);
-            this.guna2CustomGradientPanel1.TabIndex = 4;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(769, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(28, 31);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
+            this.panel11.BackColor = System.Drawing.Color.LightCyan;
+            this.panel11.Controls.Add(this.pictureBox5);
+            this.panel11.Controls.Add(this.pictureBox4);
+            this.panel11.Location = new System.Drawing.Point(369, 12);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(843, 30);
+            this.panel11.TabIndex = 7;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // Formlichsuthihs
             // 
@@ -597,48 +611,49 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1244, 817);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnl_lichsuthi);
+            this.Controls.Add(this.pnl_menuchinh);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formlichsuthihs";
-            this.Text = "Formlichsuthihs";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Text = "x``";
+            this.Load += new System.EventHandler(this.Formlichsuthihs_Load);
+            this.pnl_menuchinh.ResumeLayout(false);
+            this.pnl_menuchinh.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnl_lichsuthi.ResumeLayout(false);
+            this.pnl_lichsuthi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.pnl_diemcaonhat.ResumeLayout(false);
+            this.pnl_diemcaonhat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.pnl_danglam.ResumeLayout(false);
+            this.pnl_danglam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.pnl_dahoanthanh.ResumeLayout(false);
+            this.pnl_dahoanthanh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.paneltongsobaithi.ResumeLayout(false);
+            this.paneltongsobaithi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_danhsach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnl_menuchinh;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button6;
@@ -652,17 +667,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl_lichsuthi;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button bttn_timkiem;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private System.Windows.Forms.TextBox txt_nhapthongtin;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -671,15 +684,18 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_danhsach;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel pnl_diemcaonhat;
+        private System.Windows.Forms.Panel pnl_danglam;
+        private System.Windows.Forms.Panel pnl_dahoanthanh;
+        private System.Windows.Forms.Panel paneltongsobaithi;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label11;
     }
 }

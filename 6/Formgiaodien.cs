@@ -8,8 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-
 namespace _6
 {
     public partial class Formgiaodien : Form
@@ -57,6 +55,23 @@ namespace _6
             BoTron(panel2, 10);
             BoTron(panel3, 10);
             BoTron(panel4, 10);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Phanquyen f = new Phanquyen(this.BackColor);
+            f.Show();
+            f.Location = this.Location;
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dethi f = new dethi();
+            f.Show();
+            f.Location = this.Location;
+            f.Size = this.Size;
+            this.Hide();
         }
     }
 }
