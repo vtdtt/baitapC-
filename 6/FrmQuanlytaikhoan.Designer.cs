@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvTaikhoan = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tendangnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaytao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaycapnhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.txtTendangnhap = new System.Windows.Forms.TextBox();
             this.txtIDtaikhoan = new System.Windows.Forms.TextBox();
@@ -58,12 +64,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tendangnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaytao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaycapnhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaikhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -79,14 +80,14 @@
             // 
             this.dgvTaikhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTaikhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvTaikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTaikhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -95,14 +96,14 @@
             this.Trangthai,
             this.Ngaytao,
             this.Ngaycapnhat});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTaikhoan.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTaikhoan.DefaultCellStyle = dataGridViewCellStyle18;
             this.dgvTaikhoan.EnableHeadersVisualStyles = false;
             this.dgvTaikhoan.Location = new System.Drawing.Point(27, 29);
             this.dgvTaikhoan.Name = "dgvTaikhoan";
@@ -110,6 +111,51 @@
             this.dgvTaikhoan.Size = new System.Drawing.Size(1013, 177);
             this.dgvTaikhoan.TabIndex = 5;
             this.dgvTaikhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTaikhoan_CellClick);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "id";
+            this.ID.FillWeight = 40F;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // Tendangnhap
+            // 
+            this.Tendangnhap.DataPropertyName = "username";
+            this.Tendangnhap.HeaderText = "Tên đăng nhập";
+            this.Tendangnhap.MinimumWidth = 6;
+            this.Tendangnhap.Name = "Tendangnhap";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "email";
+            this.Email.FillWeight = 120F;
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            // 
+            // Trangthai
+            // 
+            this.Trangthai.DataPropertyName = "is_active";
+            this.Trangthai.FillWeight = 40F;
+            this.Trangthai.HeaderText = "Trạng thái";
+            this.Trangthai.MinimumWidth = 6;
+            this.Trangthai.Name = "Trangthai";
+            // 
+            // Ngaytao
+            // 
+            this.Ngaytao.DataPropertyName = "created_at";
+            this.Ngaytao.HeaderText = "Ngày tạo";
+            this.Ngaytao.MinimumWidth = 6;
+            this.Ngaytao.Name = "Ngaytao";
+            // 
+            // Ngaycapnhat
+            // 
+            this.Ngaycapnhat.DataPropertyName = "updated_at";
+            this.Ngaycapnhat.HeaderText = "Ngày cập nhật";
+            this.Ngaycapnhat.MinimumWidth = 6;
+            this.Ngaycapnhat.Name = "Ngaycapnhat";
             // 
             // iconPictureBox3
             // 
@@ -127,66 +173,62 @@
             // 
             // txtTendangnhap
             // 
-            this.txtTendangnhap.Location = new System.Drawing.Point(624, 35);
+            this.txtTendangnhap.Location = new System.Drawing.Point(600, 40);
             this.txtTendangnhap.Name = "txtTendangnhap";
             this.txtTendangnhap.Size = new System.Drawing.Size(266, 30);
             this.txtTendangnhap.TabIndex = 6;
             // 
             // txtIDtaikhoan
             // 
-            this.txtIDtaikhoan.Location = new System.Drawing.Point(171, 36);
+            this.txtIDtaikhoan.Location = new System.Drawing.Point(181, 40);
             this.txtIDtaikhoan.Name = "txtIDtaikhoan";
             this.txtIDtaikhoan.Size = new System.Drawing.Size(178, 30);
             this.txtIDtaikhoan.TabIndex = 6;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(624, 118);
+            this.txtEmail.Location = new System.Drawing.Point(600, 120);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(266, 30);
             this.txtEmail.TabIndex = 6;
             // 
             // lblHovaten
             // 
-            this.lblHovaten.AutoSize = true;
             this.lblHovaten.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHovaten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblHovaten.Location = new System.Drawing.Point(20, 123);
             this.lblHovaten.Name = "lblHovaten";
-            this.lblHovaten.Size = new System.Drawing.Size(92, 23);
+            this.lblHovaten.Size = new System.Drawing.Size(144, 30);
             this.lblHovaten.TabIndex = 5;
             this.lblHovaten.Text = "Trạng thái";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblEmail.Location = new System.Drawing.Point(443, 123);
+            this.lblEmail.Location = new System.Drawing.Point(408, 126);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(54, 23);
+            this.lblEmail.Size = new System.Drawing.Size(120, 30);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email";
             // 
             // lblDienthoai
             // 
-            this.lblDienthoai.AutoSize = true;
             this.lblDienthoai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDienthoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblDienthoai.Location = new System.Drawing.Point(443, 41);
+            this.lblDienthoai.Location = new System.Drawing.Point(408, 43);
             this.lblDienthoai.Name = "lblDienthoai";
-            this.lblDienthoai.Size = new System.Drawing.Size(128, 23);
+            this.lblDienthoai.Size = new System.Drawing.Size(173, 39);
             this.lblDienthoai.TabIndex = 5;
             this.lblDienthoai.Text = "Tên đăng nhập";
             // 
             // lblMatacgia
             // 
-            this.lblMatacgia.AutoSize = true;
             this.lblMatacgia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatacgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblMatacgia.Location = new System.Drawing.Point(24, 40);
             this.lblMatacgia.Name = "lblMatacgia";
-            this.lblMatacgia.Size = new System.Drawing.Size(108, 23);
+            this.lblMatacgia.Size = new System.Drawing.Size(151, 42);
             this.lblMatacgia.TabIndex = 5;
             this.lblMatacgia.Text = "ID tài khoản";
             // 
@@ -240,8 +282,6 @@
             // 
             // grpThongtin
             // 
-            this.grpThongtin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.grpThongtin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(238)))), ((int)(((byte)(252)))));
             this.grpThongtin.Controls.Add(this.panel2);
             this.grpThongtin.Controls.Add(this.txtTendangnhap);
@@ -255,9 +295,9 @@
             this.grpThongtin.Controls.Add(this.iconPictureBox1);
             this.grpThongtin.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpThongtin.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.grpThongtin.Location = new System.Drawing.Point(3, 92);
+            this.grpThongtin.Location = new System.Drawing.Point(3, 90);
             this.grpThongtin.Name = "grpThongtin";
-            this.grpThongtin.Size = new System.Drawing.Size(1084, 311);
+            this.grpThongtin.Size = new System.Drawing.Size(1084, 306);
             this.grpThongtin.TabIndex = 12;
             this.grpThongtin.TabStop = false;
             this.grpThongtin.Text = "    THÔNG TIN TÀI KHOẢN";
@@ -314,7 +354,7 @@
             // 
             // txtTrangthai
             // 
-            this.txtTrangthai.Location = new System.Drawing.Point(171, 123);
+            this.txtTrangthai.Location = new System.Drawing.Point(181, 123);
             this.txtTrangthai.Name = "txtTrangthai";
             this.txtTrangthai.ReadOnly = true;
             this.txtTrangthai.Size = new System.Drawing.Size(178, 30);
@@ -351,9 +391,9 @@
             this.btnTimkiem.IconColor = System.Drawing.Color.AliceBlue;
             this.btnTimkiem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTimkiem.IconSize = 20;
-            this.btnTimkiem.Location = new System.Drawing.Point(788, 44);
+            this.btnTimkiem.Location = new System.Drawing.Point(788, 47);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(147, 55);
+            this.btnTimkiem.Size = new System.Drawing.Size(147, 52);
             this.btnTimkiem.TabIndex = 12;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -376,23 +416,21 @@
             // 
             // txtTi
             // 
-            this.txtTi.AutoSize = true;
             this.txtTi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txtTi.Location = new System.Drawing.Point(325, 63);
+            this.txtTi.Location = new System.Drawing.Point(338, 63);
             this.txtTi.Name = "txtTi";
-            this.txtTi.Size = new System.Drawing.Size(128, 23);
+            this.txtTi.Size = new System.Drawing.Size(192, 36);
             this.txtTi.TabIndex = 5;
             this.txtTi.Text = "Tên đăng nhập";
             // 
             // lblTimIDtaikhoan
             // 
-            this.lblTimIDtaikhoan.AutoSize = true;
             this.lblTimIDtaikhoan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimIDtaikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblTimIDtaikhoan.Location = new System.Drawing.Point(4, 68);
+            this.lblTimIDtaikhoan.Location = new System.Drawing.Point(4, 63);
             this.lblTimIDtaikhoan.Name = "lblTimIDtaikhoan";
-            this.lblTimIDtaikhoan.Size = new System.Drawing.Size(108, 23);
+            this.lblTimIDtaikhoan.Size = new System.Drawing.Size(144, 36);
             this.lblTimIDtaikhoan.TabIndex = 5;
             this.lblTimIDtaikhoan.Text = "ID tài khoản";
             // 
@@ -465,57 +503,33 @@
             this.panel1.Size = new System.Drawing.Size(1128, 86);
             this.panel1.TabIndex = 10;
             // 
-            // ID
+            // iconButton1
             // 
-            this.ID.DataPropertyName = "id";
-            this.ID.FillWeight = 40F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // Tendangnhap
-            // 
-            this.Tendangnhap.DataPropertyName = "username";
-            this.Tendangnhap.HeaderText = "Tên đăng nhập";
-            this.Tendangnhap.MinimumWidth = 6;
-            this.Tendangnhap.Name = "Tendangnhap";
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "email";
-            this.Email.FillWeight = 120F;
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            // 
-            // Trangthai
-            // 
-            this.Trangthai.DataPropertyName = "is_active";
-            this.Trangthai.FillWeight = 40F;
-            this.Trangthai.HeaderText = "Trạng thái";
-            this.Trangthai.MinimumWidth = 6;
-            this.Trangthai.Name = "Trangthai";
-            // 
-            // Ngaytao
-            // 
-            this.Ngaytao.DataPropertyName = "created_at";
-            this.Ngaytao.HeaderText = "Ngày tạo";
-            this.Ngaytao.MinimumWidth = 6;
-            this.Ngaytao.Name = "Ngaytao";
-            // 
-            // Ngaycapnhat
-            // 
-            this.Ngaycapnhat.DataPropertyName = "updated_at";
-            this.Ngaycapnhat.HeaderText = "Ngày cập nhật";
-            this.Ngaycapnhat.MinimumWidth = 6;
-            this.Ngaycapnhat.Name = "Ngaycapnhat";
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.MintCream;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            this.iconButton1.IconColor = System.Drawing.Color.AliceBlue;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 20;
+            this.iconButton1.Location = new System.Drawing.Point(954, 766);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(133, 47);
+            this.iconButton1.TabIndex = 12;
+            this.iconButton1.Text = "Back";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // FrmQuanlytaikhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1128, 796);
+            this.ClientSize = new System.Drawing.Size(1128, 864);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.grpDanhsachtacgia);
             this.Controls.Add(this.grpThongtin);
             this.Controls.Add(this.grpTimkiem);
@@ -576,5 +590,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Trangthai;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngaytao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngaycapnhat;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

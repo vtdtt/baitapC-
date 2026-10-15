@@ -85,6 +85,15 @@
     <Compile Include="dethi.Designer.cs">
       <DependentUpon>dethi.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Formgiaodienqly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formgiaodienqly.Designer.cs">
+      <DependentUpon>Formgiaodienqly.cs</DependentUpon>
+    </Compile>
+>>>>>>> 6becb9da8ac2b7f216485fd32b365ac65baf59c4
     <Compile Include="FormQLyKetquaThi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +171,12 @@
     <EmbeddedResource Include="dethi.resx">
       <DependentUpon>dethi.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="Formgiaodienqly.resx">
+      <DependentUpon>Formgiaodienqly.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 6becb9da8ac2b7f216485fd32b365ac65baf59c4
     <EmbeddedResource Include="FormQLyKetquaThi.resx">
       <DependentUpon>FormQLyKetquaThi.cs</DependentUpon>
     </EmbeddedResource>

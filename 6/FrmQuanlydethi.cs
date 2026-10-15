@@ -376,6 +376,17 @@ namespace _6
         {
             Loaddata();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+        
+            Formgiaodienqly f = new Formgiaodienqly();
+            f.Show();
+            f.Location = this.Location;
+            f.Size = this.Size;
+            this.Hide();
+        }
+    
     }
 }
 
