@@ -85,6 +85,18 @@
     <Compile Include="dethi.Designer.cs">
       <DependentUpon>dethi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQLyKetquaThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLyKetquaThi.Designer.cs">
+      <DependentUpon>FormQLyKetquaThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuanlyCauHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanlyCauHoi.Designer.cs">
+      <DependentUpon>FrmQuanlyCauHoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginadmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,12 @@
     </Compile>
     <EmbeddedResource Include="dethi.resx">
       <DependentUpon>dethi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLyKetquaThi.resx">
+      <DependentUpon>FormQLyKetquaThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuanlyCauHoi.resx">
+      <DependentUpon>FrmQuanlyCauHoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginadmin.resx">
       <DependentUpon>loginadmin.cs</DependentUpon>

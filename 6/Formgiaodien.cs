@@ -73,5 +73,26 @@ namespace _6
             f.Size = this.Size;
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmQuanlyCauHoi qlyDeThi = new FrmQuanlyCauHoi();
+                qlyDeThi.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FormQLyKetquaThi formQLyKetquaThi = new FormQLyKetquaThi();
+            formQLyKetquaThi.Show();
+            this.Hide();
+        }
     }
 }

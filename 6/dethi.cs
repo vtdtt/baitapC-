@@ -16,7 +16,7 @@ namespace _6
     
     public partial class dethi : Form
     {
-        string connectionString = @"Data Source=localhost;Initial Catalog=htthi;Integrated Security=True";
+        string connectionString = @"Data Source=localhost\MSSQLSERVER01;Initial Catalog=htthi;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;";
         public dethi()
         {
             InitializeComponent();

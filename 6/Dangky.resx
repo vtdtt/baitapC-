@@ -120,9 +120,9 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAGFJREFUSEtj
-        GAWjYGgCCSA+A8QHwDwqA0kgvg3E/4H4LEiAmgDkcpjhIBrEpxqgqeGMQPwViEGGUxOfAmIwoLkFIEDT
-        IIIBuliCnEzPgwRoAUCW3ADik2DeKBgFwx0wMAAACjg/zSYKU7AAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAGFJREFUSEvt
+        0kEKgCAQheG/W+T9L9K2SNoGnaN18UAhZtsoFPOBiDyYJyKE8EkjsAKTDTwk4AAuINvwLd28Dteus5um
+        wwfgLMM919KtQJo+UdWl5PlNNxt6UckOzDYI4aduCjg/zSt6ryYAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
